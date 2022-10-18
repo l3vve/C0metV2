@@ -694,9 +694,9 @@ runcode(function()
                 velo:Destroy()
                 part:Destroy()
                 clone:Destroy()
-		task.wait(2.5)
+		ui.Enabled = false
+		task.wait(1)
 		cam.CameraSubject = lplr.Character:FindFirstChild("Humanoid")
-                ui.Enabled = false
             end
         end
     })
