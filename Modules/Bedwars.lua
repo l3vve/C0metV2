@@ -9,7 +9,7 @@ local lib
 if shared["betterisfile"]("CometV2/GuiLibrary") then
     lib = loadstring(readfile("CometV2/GuiLibrary.lua"))()
 else
-    lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ham-135/CometV2/main/GuiLibrary.lua"))()
+    lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoBedwarsHacker/CometV2/main/GuiLibrary.lua"))()
 end
 local getasset = getsynasset or getcustomasset
 local ScreenGuitwo = game:GetService("CoreGui").RektskyNotificationGui
@@ -689,12 +689,13 @@ runcode(function()
                     end
                 end
                 lplr.Character:FindFirstChild("Head"):FindFirstChild("face").Transparency = 0
-                cam.CameraSubject = lplr.Character:FindFirstChild("Humanoid")
                 task.delay(0.1, function() velo:Destroy() end)
                 velo.Velocity = Vector3.new(0,-100,0)
                 velo:Destroy()
                 part:Destroy()
                 clone:Destroy()
+		task.wait(2.5)
+		cam.CameraSubject = lplr.Character:FindFirstChild("Humanoid")
                 ui.Enabled = false
             end
         end
