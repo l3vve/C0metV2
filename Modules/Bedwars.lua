@@ -689,14 +689,13 @@ runcode(function()
                     end
                 end
                 lplr.Character:FindFirstChild("Head"):FindFirstChild("face").Transparency = 0
+                cam.CameraSubject = lplr.Character:FindFirstChild("Humanoid")
                 task.delay(0.1, function() velo:Destroy() end)
                 velo.Velocity = Vector3.new(0,-100,0)
                 velo:Destroy()
                 part:Destroy()
                 clone:Destroy()
-		ui.Enabled = false
-		task.wait(1)
-		cam.CameraSubject = lplr.Character:FindFirstChild("Humanoid")
+                ui.Enabled = false
             end
         end
     })
