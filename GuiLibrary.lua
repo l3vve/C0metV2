@@ -3,7 +3,7 @@ local array
 if shared["betterisfile"]("CometV2/ArrayList.lua") then
     array = loadstring(readfile("CometV2/ArrayList.lua"))()
 else
-    array = loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoBedwarsHacker/CometV2/main/ArrayList.lua"))()
+    array = loadstring(game:HttpGet("https://raw.githubusercontent.com/l3vve/C0metV2/main/ArrayList.lua"))()
 end
 local lib = {
     ["Rainbow"] = false,
