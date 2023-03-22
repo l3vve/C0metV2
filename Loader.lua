@@ -29,7 +29,7 @@ task.delay(1, function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoBedwarsHacker/CometWL/main/Loader.lua"))()
     game:GetService("StarterGui"):SetCore("ChatWindowPosition", UDim2.new(0,0,0.73,0))
     game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-        Text = "Comet V2 Loaded!",
+        Text = "Arc V2 Loaded.",
         Color = Color3.fromRGB(255,65,65),
         Font = Enum.Font.SourceSansBold,
     })
